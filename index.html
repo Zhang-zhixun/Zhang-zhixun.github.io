@@ -2,11 +2,13 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>我的网页</title>
+  <title>我的博客</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
     }
     
     header {
@@ -37,6 +39,19 @@
       padding: 20px;
       background-color: #ffffff;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin: 20px;
+    }
+    
+    article {
+      margin-bottom: 20px;
+    }
+    
+    article h2 {
+      color: #333333;
+    }
+    
+    article p {
+      color: #666666;
     }
     
     footer {
@@ -45,30 +60,99 @@
       color: #ffffff;
       text-align: center;
     }
+    
+    .sidebar {
+      float: right;
+      width: 30%;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+    
+    .sidebar h3 {
+      color: #333333;
+      margin-top: 0;
+    }
+    
+    .sidebar ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .sidebar ul li {
+      margin-bottom: 10px;
+    }
+    
+    .search-form input[type="text"] {
+      width: 100%;
+      padding: 5px;
+      border: 1px solid #cccccc;
+    }
+    
+    .search-form input[type="submit"] {
+      background-color: #333333;
+      color: #ffffff;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>我的网页</h1>
+    <h1>我的博客</h1>
   </header>
   
   <nav>
     <ul>
       <li><a href="#">首页</a></li>
-      <li><a href="#">关于我们</a></li>
-      <li><a href="#">产品</a></li>
-      <li><a href="#">联系我们</a></li>
+      <li><a href="#">分类</a></li>
+      <li><a href="#">标签</a></li>
+      <li><a href="#">关于</a></li>
+      <li><a href="#">联系</a></li>
     </ul>
   </nav>
   
   <section>
-    <h2>欢迎来到我的网页</h2>
-    <p>这是一个完整的 HTML 案例，展示了网页的基本结构和常见元素。</p>
-    <p>您可以根据需要在这里添加更多的内容和功能。</p>
+    <div class="sidebar">
+      <h3>分类</h3>
+      <ul>
+        <li><a href="#">技术</a></li>
+        <li><a href="#">编程</a></li>
+        <li><a href="#">设计</a></li>
+      </ul>
+      
+      <h3>标签</h3>
+      <ul>
+        <li><a href="#">HTML</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">JavaScript</a></li>
+      </ul>
+      
+      <h3>搜索</h3>
+      <form class="search-form">
+        <input type="text" placeholder="输入关键词">
+        <input type="submit" value="搜索">
+      </form>
+    </div>
+    
+    <div class="main-content">
+      <article>
+        <h2>博客文章标题1</h2>
+        <p>这是一篇关于博客的示例文章。Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec lorem quis nisl fermentum fermentum. Aliquam aliquet lobortis dolor vitae iaculis. Duis volutpat metus eget eros aliquet, at tristique nunc consectetur. Aenean sed pharetra velit, sit amet venenatis mi.</p>
+      </article>
+      
+      <article>
+        <h2>博客文章标题2</h2>
+        <p>这是另一篇关于博客的示例文章。In aliquet ultrices lorem id tincidunt. Fusce posuere mi at risus congue ullamcorper. Maecenas rutrum, sem id dignissim auctor, erat nisi laoreet dui, eu posuere tellus risus nec nibh. Suspendisse quis fermentum turpis. Nulla facilisi.</p>
+      </article>
+      
+      <!-- 继续添加更多文章 -->
+    </div>
   </section>
   
   <footer>
-    <p>版权所有 &copy; 2023 我的网页</p>
+    <p>版权所有 &copy; 2023 我的博客</p>
   </footer>
 </body>
 </html>
