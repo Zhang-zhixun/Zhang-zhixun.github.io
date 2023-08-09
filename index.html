@@ -1,158 +1,602 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>我的博客</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f2f2f2;
-      margin: 0;
-      padding: 0;
-    }
-    
-    header {
-      background-color: #333333;
-      padding: 20px;
-      color: #ffffff;
-      text-align: center;
-    }
-    
-    nav {
-      background-color: #555555;
-      padding: 10px;
-      color: #ffffff;
-    }
-    
-    nav ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-    }
-    
-    nav ul li {
-      display: inline;
-      margin-right: 10px;
-    }
-    
-    section {
-      padding: 20px;
-      background-color: #ffffff;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      margin: 20px;
-    }
-    
-    article {
-      margin-bottom: 20px;
-    }
-    
-    article h2 {
-      color: #333333;
-    }
-    
-    article p {
-      color: #666666;
-    }
-    
-    footer {
-      background-color: #333333;
-      padding: 20px;
-      color: #ffffff;
-      text-align: center;
-    }
-    
-    .sidebar {
-      float: right;
-      width: 30%;
-      padding: 20px;
-      background-color: #f9f9f9;
-    }
-    
-    .sidebar h3 {
-      color: #333333;
-      margin-top: 0;
-    }
-    
-    .sidebar ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-    }
-    
-    .sidebar ul li {
-      margin-bottom: 10px;
-    }
-    
-    .search-form input[type="text"] {
-      width: 100%;
-      padding: 5px;
-      border: 1px solid #cccccc;
-    }
-    
-    .search-form input[type="submit"] {
-      background-color: #333333;
-      color: #ffffff;
-      border: none;
-      padding: 5px 10px;
-      cursor: pointer;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>ZHIXUN'S ONE PIECE</title>
 </head>
+
 <body>
-  <header>
-    <h1>我的博客</h1>
-  </header>
-  
-  <nav>
-    <ul>
-      <li><a href="#">首页</a></li>
-      <li><a href="#">分类</a></li>
-      <li><a href="#">标签</a></li>
-      <li><a href="#">关于</a></li>
-      <li><a href="#">联系</a></li>
-    </ul>
-  </nav>
-  
-  <section>
-    <div class="sidebar">
-      <h3>分类</h3>
-      <ul>
-        <li><a href="#">技术</a></li>
-        <li><a href="#">编程</a></li>
-        <li><a href="#">设计</a></li>
-      </ul>
-      
-      <h3>标签</h3>
-      <ul>
-        <li><a href="#">HTML</a></li>
-        <li><a href="#">CSS</a></li>
-        <li><a href="#">JavaScript</a></li>
-      </ul>
-      
-      <h3>搜索</h3>
-      <form class="search-form">
-        <input type="text" placeholder="输入关键词">
-        <input type="submit" value="搜索">
-      </form>
+
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+        <label for="navi-toggle" class="navigation__button">
+
+            <span class="navigation__icon">
+                &nbsp;
+            </span>
+
+        </label>
+
+        <div class="navigation__background">&nbsp;</div>
+
+
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>东海篇</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>阿拉巴斯坦篇</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>空岛篇</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>七水之城·司法岛篇</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>恐怖之船·香波迪群岛篇</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>06</span>玛丽弗德顶尖决战篇</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>07</span>鱼人岛·班克禁区篇</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>08</span>德莱斯罗兹篇</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>09</span>佐乌·蛋糕岛篇</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>10</span>和之国篇</a></li>
+            </ul>
+        </nav>
+
     </div>
-    
-    <div class="main-content">
-      <article>
-        <h2>博客文章标题1</h2>
-        <p>这是一篇关于博客的示例文章。Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec lorem quis nisl fermentum fermentum. Aliquam aliquet lobortis dolor vitae iaculis. Duis volutpat metus eget eros aliquet, at tristique nunc consectetur. Aenean sed pharetra velit, sit amet venenatis mi.</p>
-      </article>
-      
-      <article>
-        <h2>博客文章标题2</h2>
-        <p>这是另一篇关于博客的示例文章。In aliquet ultrices lorem id tincidunt. Fusce posuere mi at risus congue ullamcorper. Maecenas rutrum, sem id dignissim auctor, erat nisi laoreet dui, eu posuere tellus risus nec nibh. Suspendisse quis fermentum turpis. Nulla facilisi.</p>
-      </article>
-      
-      <!-- 继续添加更多文章 -->
+
+
+    <header class="header">
+        <div class="header__logo-box">
+            <!-- <img src="img/R-C.png" alt="Logo" class="header__logo" /> -->
+        </div>
+
+        <div class="header__text-box">
+            <h1 class="heading-primary">
+                <span class="heading-primary--main">ZhiXun</span>
+                <span class="heading-primary--sub">想要我的财宝吗？ 去吧，我把一切全都放在了那里</span>
+            </h1>
+
+            <a href="#section-people" class="btn btn--primary btn--animated">开启新时代</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-about">
+
+            <!-- 
+                <div class="bg-video">
+                autoplay 自动播放 muted 静音 loop 循环播放 
+                <video class="bg-video__content-1" autoplay muted loop>
+                    <source src="img/video/lf4dBg.mp4" type="video/mp4">
+                </video>
+
+            </div> -->
+
+
+            <!--<div class="u-center-text u-margin-bottom-large">
+                <h2 class="heading-secondary">
+                    为喜欢冒险的人准备的令人兴奋的旅行
+                </h2>
+            </div>-->
+
+            <div class="row">
+                <div class="col-1-of-2 ">
+                    <h3 class="heading-tertiary u-margin-top-f-middle ">
+                        简介
+                    </h3>
+                    <p class="paragraph">
+                        &nbsp;&nbsp;&nbsp;&nbsp;传奇海盗哥尔·D·罗杰在临死前曾留下关于其毕生的财富“One
+                        Piece”的消息，由此引得群雄并起，众海盗们为了这笔传说中的巨额财富展开争夺，各种势力、政权不断交替，整个世界进入了动荡混乱的“大海贼时代”......
+                    </p>
+
+                    <h3 class="heading-tertiary  ">
+                        东海篇
+                    </h3>
+                    <p class="paragraph">
+                        &nbsp;&nbsp;&nbsp;&nbsp;路飞童年时受到海贼“红发”香克斯的启蒙，自小就立志要成为“海贼王”
+                        。路飞17岁时，戴着“红发”香克斯托付的草帽，只身从故乡风车村出发......</p>
+
+                    <h3 class="heading-tertiary  ">
+                        伟大的航路突入篇&冬岛篇
+                    </h3>
+                    <p class="paragraph">
+                        &nbsp;&nbsp;&nbsp;&nbsp;草帽海贼团一行人来到伟大航道、在威士忌山峰遇到卧底在秘密犯罪组织巴洛克华克的阿拉巴斯坦王国公主奈菲特·薇薇，从公主口中得知阿拉巴斯坦正处于水深火热之中......
+                    </p>
+
+                    <h3 class="heading-tertiary  ">
+                        阿拉巴斯坦篇
+                    </h3>
+                    <p class="paragraph">
+                        &nbsp;&nbsp;&nbsp;&nbsp;抵达阿拉巴斯坦后，当地因为鳄鱼的煽动爆发内战，路飞最后击败鳄鱼，内战亦随之结束。其后薇薇向路飞等人道别，而原巴洛克华克副社长妮古·罗宾，因失去人生目标，以考古学家的身份加入了草帽海贼团......
+                    </p>
+
+                    <h3 class="heading-tertiary  ">
+                        空岛篇
+                    </h3>
+                    <p class="paragraph">
+                        &nbsp;&nbsp;&nbsp;&nbsp;离开阿拉巴斯坦王国之后，草帽海贼团撞见一艘从天而降的大船，同时纪录指针竟然向上指向天空。对空岛产生兴趣的路飞靠着上升海流前往空岛。误入了空岛统治者“神”艾尼路的领地......
+                    </p>
+
+
+                    <h3 class="heading-tertiary  ">
+                        水之七岛篇
+                    </h3>
+                    <p class="paragraph">
+                        &nbsp;&nbsp;&nbsp;&nbsp;为修缮伤痕累累的前进梅利号，草帽海贼团来到以造船业闻名的水之七岛，却得知梅莉号已经无法修复的消息，撒谎布又惨败给拆船流氓弗兰奇，因而离团。另一方面，罗宾遇见了政府机关CP9......
+                    </p>
+
+                    <a href="#" class="btn-text">查看更多 &rarr;</a>
+
+                </div>
+                <div class="col-1-of-2">
+                    <div class="composition">
+                        <img src="img/dh.jpg" alt="照片1" class="composition__photo composition__photo--p1">
+                        <img src="img/dd.jpg" alt="照片2" class="composition__photo composition__photo--p2">
+                        <img src="img/kd.jpg" alt="照片3" class="composition__photo composition__photo--p3">
+                        <img src="img/sfd.png" alt="照片4" class="composition__photo composition__photo--p4">
+                        <img src="img/xbdq.jpg" alt="照片5" class="composition__photo composition__photo--p5">
+                        <img src="img/dszz.jpg" alt="照片6" class="composition__photo composition__photo--p6">
+                        <img src="img/yrd.jpg" alt="照片7" class="composition__photo composition__photo--p7">
+                        <img src="img/mg.jpg" alt="照片8" class="composition__photo composition__photo--p8">
+                        <img src="img/dgd.jpg" alt="照片9" class="composition__photo composition__photo--p9">
+                        <img src="img/hzg.jpg" alt="照片10" class="composition__photo composition__photo--p10">
+                        <img src="img/nika.png" alt="照片11" class="composition__photo composition__photo--p11">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="section-features">
+            <div class="u-margin-top-f-middle">
+                <span class="heading-personText">
+                    伙&nbsp;伴
+                </span>
+            </div>
+            <div class="row">
+                <div class="col-1-of-4 ">
+                    <div class="feature-box">
+                        <img src="img/tou/suo.webp" class="feature-box__img" />
+                        <h3 class="heading-tertiary u-margin-bottom-small">罗罗诺亚·索隆</h3>
+                        <p class="feature-box__text">
+                            “草帽一伙”的战斗员，外号“海贼猎人”。东海出身，悬赏金11亿1100万贝里。
+                            “草帽一伙”第一位加入的成员。梦想成为“世界第一大剑豪”。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-1-of-4">
+                    <div class="feature-box">
+                        <img src="img/tou/na.webp" class="feature-box__img" />
+                        <h3 class="heading-tertiary u-margin-bottom-small">娜美</h3>
+                        <p class="feature-box__text">
+                            “草帽一伙”的航海士，外号“小贼猫”。东海出身，悬赏金3亿6600万贝里。使用天候棒结合气象科学进行
+                            战斗。“草帽一伙”第二位加入的成员。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-1-of-4">
+                    <div class="feature-box">
+                        <img src="img/tou/wu.webp" class="feature-box__img" />
+                        <h3 class="heading-tertiary u-margin-bottom-small">乌索普</h3>
+                        <p class="feature-box__text">
+                            “草帽一伙”的狙击手，外号“狙击之王”、“GOD·乌索普”。东海出身，悬赏金5亿贝里。使用特制弹弓和植
+                            物弹药进行战斗。“草帽一伙”第三位加入的成员。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-1-of-4">
+                    <div class="feature-box">
+                        <img src="img/tou/shang.webp" class="feature-box__img" />
+                        <h3 class="heading-tertiary u-margin-bottom-small">山治</h3>
+                        <p class="feature-box__text">
+                            “草帽一伙”的厨师，外号“黑足”。北海出身，悬赏金10亿3200万贝里。使用踢技和杰尔马战斗服进行战
+                            斗。“草帽一伙”第四位加入的成员。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-1-of-4">
+                    <div class="feature-box">
+                        <img src="img/tou/qiao.webp" class="feature-box__img" />
+                        <h3 class="heading-tertiary u-margin-bottom-small">托尼托尼·乔巴</h3>
+                        <p class="feature-box__text">
+                            “草帽一伙”的船医，外号“爱吃棉花糖的乔巴”。伟大航路出身，悬赏金1000贝里。是食用了人人果实的
+                            驯鹿。“草帽一伙”第五位加入的成员。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-1-of-4">
+                    <div class="feature-box">
+                        <img src="img/tou/luo.webp" class="feature-box__img" />
+                        <h3 class="heading-tertiary u-margin-bottom-small">妮可·罗宾</h3>
+                        <p class="feature-box__text">
+                            “草帽一伙”的考古学家，外号“恶魔之子”。西海出身，悬赏金9亿3000万贝里。是食用了花花果实的能力
+                            者。“草帽一伙”第六位加入的成员。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-1-of-4">
+                    <div class="feature-box">
+                        <img src="img/tou/fu.webp" class="feature-box__img" />
+                        <h3 class="heading-tertiary u-margin-bottom-small">弗兰奇</h3>
+                        <p class="feature-box__text">
+                            “草帽一伙”的船匠，外号“铁人·弗兰奇”。南海出身，悬赏金3亿9400万贝里。使用改造后的身体以及自制兵器进行战斗。“草帽一伙”第七位
+                            加入的成员。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-1-of-4">
+                    <div class="feature-box">
+                        <img src="img/tou/bu.webp" class="feature-box__img" />
+                        <h3 class="heading-tertiary u-margin-bottom-small">布鲁克</h3>
+                        <p class="feature-box__text">
+                            “草帽一伙”的音乐家，外号“鼻歌·布鲁克”、“灵魂之王”。西海出身，悬赏金3亿8300万贝里。食用了黄
+                            泉果实的能力者。“草帽一伙”第八位加入的成员。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <div class="u-margin-left-large u-right-text u-margin-top-middle">
+            <span class="heading-personText">
+                新挑战
+            </span>
+        </div>
+
+        <section class="section-people" id="section-people">
+
+
+            <div class="row">
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                            <div class="card__picture card__picture--1">
+
+                            </div>
+                            <h4 class="card__heading">
+                                <span class="card__heading-span card__heading-span--1">
+                                    新四皇之黑胡子 马歇尔·D·蒂奇
+                                </span>
+                            </h4>
+                            <div class="card__details">
+                                <ul>
+                                    <li>简介</li>
+                                    <li>别名：黑胡子</li>
+                                    <li>隶属：黑胡子海贼团</li>
+                                    <li>悬赏金：39亿9600万贝里</li>
+                                    <li>恶魔果实：自然系暗暗果实、超人系震震果实</li>
+                                    <li>霸气：武装色霸气、见闻色霸气</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="card__side card__side--black card__side--black-1">
+                            <div class="card__cta">
+                                <div class="card__person-box">
+                                </div>
+                                <a href="#popup-1" class="btn btn--secondary">详 细</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                            <div class="card__picture card__picture--2">
+
+                            </div>
+                            <h4 class="card__heading">
+                                <span class="card__heading-span card__heading-span--2">
+                                    四皇之最强生物 凯多
+                                </span>
+                            </h4>
+                            <div class="card__details">
+                                <ul>
+                                    <li>简介</li>
+                                    <li>别名：百兽凯多</li>
+                                    <li>隶属：百兽海贼团</li>
+                                    <li>悬赏金：46亿1110万贝里</li>
+                                    <li>恶魔果实：鱼鱼果实·幻兽种·青龙形态</li>
+                                    <li>霸气：霸王色霸气、武装色霸气、见闻色霸气</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="card__side card__side--black card__side--black-2">
+                            <div class="card__cta">
+                                <div class="card__person-box">
+                                </div>
+                                <a href="#popup-2" class="btn btn--primary">详 细</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                            <div class="card__picture card__picture--3">
+
+                            </div>
+                            <h4 class="card__heading">
+                                <span class="card__heading-span card__heading-span--3">
+                                    新四皇之小丑王 巴基
+                                </span>
+                            </h4>
+                            <div class="card__details">
+                                <ul>
+                                    <li>简介</li>
+                                    <li>别名：小丑巴基</li>
+                                    <li>隶属：巴基海贼团</li>
+                                    <li>悬赏金：31亿8900万贝里</li>
+                                    <li>恶魔果实：四分五裂果实</li>
+                                    <li>霸气：未知</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="card__side card__side--black card__side--black-3">
+                            <div class="card__cta">
+                                <div class="card__person-box">
+                                </div>
+                                <a href="#popup-3" class="btn btn--tertiary">详 细</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-stories">
+
+            <div class="bg-video">
+                <!-- autoplay 自动播放 muted 静音 loop 循环播放 -->
+                <video class="bg-video__content" autoplay muted>
+                    <source src="img/video/bg-2.mp4" type="video/mp4">
+                </video>
+
+            </div>
+
+            <div class="u-center-text u-margin-bottom-small">
+                <h2 class="heading-personText">
+                    最新情报
+                </h2>
+            </div>
+
+            <div class="row">
+                <div class="story">
+                    <figure class="story__shape">
+                        <img src="img/nika.png" alt="尼卡" class="story__img" />
+                        <figcaption class="story__caption">尼 卡</figcaption>
+                    </figure>
+                    <div class="story__text">
+                        <h3 class="heading-tertiary u-margin-bottom-small">
+                            海贼王动漫最新情报
+                        </h3>
+                        <p>
+                            &nbsp;&nbsp;&nbsp;&nbsp;和之国战争即将落幕，凯多和路飞的战斗进入新阶段。路飞被凯多打死后，草帽一伙和武士军团都差点崩
+                            溃了，凯多正在宴会厅大闹，谁敢反抗就会被凯多干掉，不过没有人投降，凯多要把所有人变成奴隶，武
+                            士军团只能死战到底，草帽小子也开始爆发了，解放之鼓响起，太阳神尼卡降临人间。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="story">
+                    <figure class="story__shape">
+                        <img src="img/kapu.png" alt="卡普" class="story__img" />
+                        <figcaption class="story__caption">卡 普</figcaption>
+                    </figure>
+                    <div class="story__text">
+                        <h3 class="heading-tertiary u-margin-bottom-small">
+                            海贼王漫画最新情报
+                        </h3>
+                        <p>
+                            &nbsp;&nbsp;&nbsp;&nbsp;蜂巢岛大战落幕，卡普在蜂巢岛失踪，传奇英雄落幕，新英雄克比安全归来，未来岛事件也被新闻报道了，
+                            草帽一伙正在负隅顽抗，海军的军舰已经抵达未来岛，新的大战要爆发了，未来岛大战才是主线剧情，下
+                            周休！卡普到底有没有死？
+                        </p>
+                    </div>
+
+
+                </div>
+                <div class="u-center-text u-margin-top-middle">
+                    <a href="#" class="btn btn--white">详 细</a>
+                </div>
+
+            </div>
+
+
+
+        </section>
+
+
+
+        <section class="section-book">
+            <div class="row">
+
+                <div class="book">
+
+                    <div class="book__form">
+                        <form action="#" class="form">
+
+                            <div class="">
+                                <h2 class="heading-secondary">
+                                    一起加入我们吧！
+                                </h2>
+                            </div>
+
+                            <div class="form__group">
+                                <!--placeholder 输入框提示的值  required 不能为空 -->
+                                <input type="text" id="name" class="form__input" placeholder="用户名" required>
+                                <label for="name" class="form__label">用户名</label>
+                            </div>
+
+                            <div class="form__group">
+                                <!--placeholder 输入框提示的值  required 不能为空 -->
+                                <input type="email" id="email" class="form__input" placeholder="邮箱地址" required>
+                                <label for="name" class="form__label">邮箱地址</label>
+                            </div>
+
+                            <div class="form__group">
+                                <div class="form__radio-group">
+                                    <input type="radio" class="form__radio-input" id="small" name="size">
+                                    <label for="small" class="form__radio-label">
+                                        <span class="form__radio-button"></span>
+                                        海贼
+                                    </label>
+                                </div>
+
+                                <div class="form__radio-group">
+                                    <input type="radio" class="form__radio-input" id="larger" name="size">
+                                    <label for="larger" class="form__radio-label">
+                                        <span class="form__radio-button"></span>
+                                        海军
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form__group u-margin-left-middle u-margin-top-middle">
+                                <button class="btn btn--primary">进入世界</button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__logo-box">
+            <img src="img/logo.png" class="footer__logo" alt="合集">
+        </div>
+
+        <div class="row">
+            <div class="col-1-of-2">
+                <div class="footer__navigation">
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="#" class="footer__link">Zhixun's HUT</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">关于我们</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">联系我们</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">隐私</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">条款</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-1-of-2">
+                <p class="footer__copyright u-margin-left">
+                    Bulit my
+                    <a href="" class="footer__link">
+                        Zhixun Zhang
+                    </a>
+                    for his online website
+                    <a href="" class="footer__link">
+                        Advanced One Piece
+                    </a>. Copyright &copy; by ZhiXun Zhang. You can to use this webPage for both personal and commercia
+                    use, Thanks to Jonas Schmedtmann!
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="popup" id="popup-1">
+        <div class="popup__content">
+            <div class="popup__left">
+                <img src="img/hht.jpg" alt="" class="popup__img">
+                <img src="img/hht2.jpg" alt="" class="popup__img">
+            </div>
+
+            <div class="popup__right">
+                <a href="#section-people" class="popup__close">&times;</a>
+                <h2 class="heading-secondary">黑胡子海贼团</h2>
+                <h3 class="heading-tertiary u-margin-top-f-small">船长：马歇尔·D·汀奇</h3>
+
+                <p class="popup__text">
+                    &nbsp;&nbsp;&nbsp;&nbsp;黑胡子海贼团是由“黑胡子”马歇尔·D·汀奇所率领的海贼团。船上目前有十名干部，皆拥有恐怖的战斗力。两年前
+                    的海贼船是巨大木筏，现有主力舰吉贝克之剑号。两年后“黑胡子”号称提督，在两年前集结的9名船员则都升格为
+                    十名巨汉船长，分别以数字编号，可见黑胡子海贼团的实力及人数不断提升。12他们曾经毁灭位于伟大航路的磁鼓
+                    王国及袭击大监狱推进城，顶点战争时网罗数位LEVEL 6的最强囚犯以及取得震震果实能力。1 一年后与马可率领
+                    的白胡子海贼团余党发生了一次大规模冲突，世间称为“秋后战争了断之战”，最后马可那方惨败，队长们失去音讯
+                    ，白胡子海贼团就此成了传说，而“黑胡子”借此称霸原本属于白胡子海贼团的地盘跻身至四皇之位。
+
+                </p>
+
+                <a href="#" class="btn btn--primary">挑 战</a>
+            </div>
+        </div>
     </div>
-  </section>
-  
-  <footer>
-    <p>版权所有 &copy; 2023 我的博客</p>
-  </footer>
+
+    <div class="popup" id="popup-2">
+        <div class="popup__content">
+            <div class="popup__left">
+                <img src="img/bst.jpg" alt="" class="popup__img" style="height: 30rem;">
+                <img src="img/bst2.webp" alt="" class="popup__img" style="height: 35rem;">
+            </div>
+
+            <div class="popup__right">
+                <a href="#section-people" class="popup__close">&times;</a>
+                <h2 class="heading-secondary">百兽海贼团</h2>
+                <h3 class="heading-tertiary u-margin-top-f-small">船长：卡伦杜拉·唐吉乔伊·乌索普</h3>
+
+                <p class="popup__text">
+                    &nbsp;&nbsp;&nbsp;&nbsp;百兽海贼团是《海贼王》中的一个海贼团体，由百兽海贼团船长卡伦杜拉·唐吉乔伊·乌索普（简称乌索普）领导。
+                    乌索普作为夏尔罗特家族的一员，目睹了母亲被船舰士兵杀害的悲惨经历，决定成为一名海贼，寻找传说中的One
+                    Piece寻求家族的荣誉和富裕。乌索普是一个有着丰富想象力和谎言技巧的善于说谎者，他可以通过编造各种谎言骗过敌人和伙伴。
+                    百兽海贼团的成员中，最重要的角色是凯多，他是新世界的四位大海賊团首领之一，嗜好是打烂城市和喝酒。与凯多有类似经历的佩罗斯佩罗莱乌斯（简称佩罗斯佩罗）成为了百兽海贼团的副船长，他曾是贝尔米尔的一名王守卫，是一个有着高尚使命感的骑士。
+                    此外，百兽海贼团中还有一位重要的成员是冈布尔族战士狮子人卡巴吉，他有着异常的力量和斗志，和女船员透水猫儿三石共同守护着团队。最新加入的成员是海贼猎人罗英吉曼，他是百兽海贼团的狙击手，拥有强大的狙击技术和准确的枪法。
+                    百兽海贼团总部位于菲亚玛岛，他们最大的目标是成为王下七武海。为了实现这个目标，他们频繁袭击其他海贼团的船只，掠夺财宝和夺取海军的重要情报。他们还与海盗组织大
+                    Mom（大妈）团结在一起，来共同对抗鼠王队的联盟。
+                    百兽海贼团所驾驶的船舰名为“牛头王”，它是一艘庞大的动物形态的船，船头设计成牛头，外观奇特。船少里配有各种战斗装置和武器，可以进行海上的战斗和冲击。海贼团成员之间的关系非常紧密，虽然乌索普经常撒谎，但他们彼此都非常信任和支持。
+                    百兽海贼团的故事在《海贼王》剧情发展中扮演着重要的角色，是剧中受到众多粉丝喜爱的团队之一。他们的冒险和战斗充满刺激和惊险，乌索普等成员的个性和技能也令人印象深刻。无论是面对强敌还是团队合作，百兽海贼团都始终坚持自己的信念和理想，奋不顾身地战斗到底。
+                </p>
+
+                <a href="#" class="btn btn--primary">挑 战</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="popup-3">
+        <div class="popup__content">
+            <div class="popup__left">
+                <img src="img/bjt.jpeg" alt="" class="popup__img" style="height: 45rem;">
+                <img src="img/bjt2.avif" alt="" class="popup__img">
+            </div>
+
+            <div class="popup__right">
+                <a href="#section-people" class="popup__close">&times;</a>
+                <h2 class="heading-secondary">巴基海贼团</h2>
+                <h3 class="heading-tertiary u-margin-top-f-small">船长：小丑巴基</h3>
+
+                <p class="popup__text">
+                    &nbsp;&nbsp;&nbsp;&nbsp;巴基海贼团是日本漫画《海贼王》中的一个海贼团，由巴基担任首领。他们首次登场于漫画的第8卷和动画的第1季，是早期在故事中出现的敌对势力。
+                    巴基海贼团的船长巴基是一个手持大刀、戴着兜帽的腰里斩悍船长，他身穿黑色上衣和裤子，带着铁脚镣。他的左耳穿戴着五个巨大的黄金耳环，看起来狰狞而威武。巴基曾经是一个海军中尉，但因为他的权力欲和贪婪而背叛了海军，加入了海盗团。
+                    巴基船长的目标是追求财富和权力，为了实现自己的目标，他做出了许多邪恶的行为。他利用自己的海军背景和一群无知的海盗成员，攻占了一个小岛并将其改造成了一个庞大而无敌的海盗基地。
+                    巴基海贼团的成员大多数都是一些低级的海盗和无知的追随者，他们被巴基愚弄和领导。在海贼团中，巴基号称自己是“最美的帅哥”，他迷恋自己的外貌并不断打扮自己。他经常在船上表演各种滑稽的动作，试图通过自夸和卖弄风骚来吸引团员们的注意。
+                    尽管巴基海贼团的成员实力不强，但他们经常利用恶作剧和阴谋来对付其他的海盗团和无辜的人民。他们利用自己的巧妙计谋和船技，经常成功地逃脱追捕，并将其他的海盗团打败。
+                    然而，在巴基自称为“最美的帅哥”的时候，海贼王草帽海贼团的船长路飞正巧经过，并表示巴基远远不如自己帅气。这激怒了巴基，他带着海贼团成员对路飞等人发动了攻击。
+                    最终，巴基海贼团在和草帽海贼团的战斗中被打败，并由路飞亲手将巴基击败。巴基被送进了监狱，成为一个被关押的海盗。
+                    但现在的巴基实力却深不可测，海贼团的成员包括前七武海老沙、鹰眼、阿尔维达等强者4。巴基还是海贼派遣公司“巴基速递”的老板，拥有大量的追随者和雇佣兵2。巴基现在被称为四皇之一，是新世界的霸主4
+                </p>
+
+                <a href="#" class="btn btn--primary">挑 战</a>
+            </div>
+        </div>
+    </div>
+
 </body>
+
 </html>
