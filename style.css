@@ -332,15 +332,15 @@ body {
       .card__side--black-1 {
         background-size: 100% 120%;
         background-blend-mode: saturation;
-        background-image: linear-gradient(to right bottom, #fdcd4a, #fd9760), url(../img/heihuzi.webp); }
+        background-image: linear-gradient(to right bottom, #fdcd4a, #fd9760), url(heihuzi.webp); }
       .card__side--black-2 {
         background-size: 100% 100%;
         background-blend-mode: saturation;
-        background-image: linear-gradient(to right bottom, #d27097, #eb0101), url(../img/kaiduo.webp); }
+        background-image: linear-gradient(to right bottom, #d27097, #eb0101), url(kaiduo.webp); }
       .card__side--black-3 {
         background-size: 115% 120%;
         background-blend-mode: saturation;
-        background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../img/bajibg.webp); }
+        background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(bajibg.webp); }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--black {
@@ -352,15 +352,15 @@ body {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%);
       clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%);
       background-blend-mode: hue;
-      background-image: linear-gradient(to right bottom, #fdcd4a, #fd9760), url(../img/heihuzi.jpg); }
+      background-image: linear-gradient(to right bottom, #fdcd4a, #fd9760), url(heihuzi.jpg); }
     .card__picture--2 {
       background-blend-mode: saturation;
-      background-image: linear-gradient(to right bottom, #fdcd4a, #fd9760), url(../img/kd.webp); }
+      background-image: linear-gradient(to right bottom, #fdcd4a, #fd9760), url(kd.webp); }
     .card__picture--3 {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%);
       clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%);
       background-blend-mode: soft-light;
-      background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../img/baji.webp); }
+      background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(baji.webp); }
   .card__heading {
     font-size: 2.3rem;
     font-weight: 300;
@@ -669,7 +669,7 @@ body {
 
 .footer {
   padding: 5rem 0;
-  background-image: linear-gradient(105deg, rgba(51, 51, 51, 0.7), rgba(51, 51, 51, 0.8)), url(../img/heji.webp);
+  background-image: linear-gradient(105deg, rgba(51, 51, 51, 0.7), rgba(51, 51, 51, 0.8)), url(heji.webp);
   background-size: 100%;
   color: #cbcbcb;
   -webkit-clip-path: polygon(0 0, 50% 20%, 100% 0%, 100% 100%, 0% 100%);
@@ -743,7 +743,7 @@ body {
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(210, 112, 151, 0.4), rgba(235, 1, 1, 0.5)), url(../img/h4.webp);
+  background-image: linear-gradient(to right bottom, rgba(210, 112, 151, 0.4), rgba(235, 1, 1, 0.5)), url(h4.webp);
   background-size: cover;
   background-position: top;
   position: relative;
@@ -879,7 +879,7 @@ body {
 
 .section-features {
   padding: 4.5rem 0;
-  background-image: linear-gradient(to right bottom, rgba(253, 205, 74, 0.4), rgba(253, 151, 96, 0.5)), url(../img/h9.jpg);
+  background-image: linear-gradient(to right bottom, rgba(253, 205, 74, 0.4), rgba(253, 151, 96, 0.5)), url(h9.jpg);
   background-size: cover;
   margin-top: -17rem;
   transform: skewY(-4deg); }
@@ -904,7 +904,7 @@ body {
   height: 60rem; }
 
 .book {
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.92) 50%, transparent 4%), url(../img/h7.jpg);
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.92) 50%, transparent 4%), url(h7.jpg);
   background-size: 100%;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
